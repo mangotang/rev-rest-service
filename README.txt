@@ -8,7 +8,7 @@ To build the Docker container:
     (don't forget the "." at the end of the previous line)
 
 To run the Docker container:
-    run: 
+    while in the "docker" directory, run: 
         docker run -p 18080:8080 rev-rest-service
     (this will start docker and the web service)
 
@@ -20,7 +20,8 @@ To access the web service in the Docker container:
         curl http://localhost:18080/reversed-strings/98765
 
 To stop the Docker container:
-    docker stop `docker ps -q`
+    while in the "docker" directory, run:
+        docker stop `docker ps -q`
 
 The project's jar artifact can be built with maven:
     cd to project's root directory
