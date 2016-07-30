@@ -1,5 +1,6 @@
 package org.snb.rev;
 
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ReverserController {
 
-    @RequestMapping(value = "/reversed-strings/{str}", method = RequestMethod.GET)
+    @RequestMapping(value = "/reversed-strings/{str}", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
     public String reverse(@PathVariable(value="str") final String str) {
 
         final String reversedWord = (new StringBuilder(str)).reverse().toString();
