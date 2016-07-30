@@ -3,7 +3,6 @@ To build the Docker container:
     In a command line shell (like bash), do the following:
     cd to project's root directory
     cd to "docker" directory
-    (NOTE: rev-rest-service-0.1.0.jar should already be in the "docker" directory)
     On the command line run: docker build -t rev-rest-service .
     (don't forget the "." at the end of the previous line)
 
